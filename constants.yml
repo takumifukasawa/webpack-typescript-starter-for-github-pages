@@ -1,4 +1,3 @@
 BASE_DIR: /
 SRC: ./src
 DEST: ./docs
-ASSET_BASE_DIR: ./
