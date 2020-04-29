@@ -12,6 +12,7 @@ const {
   SRC,
   DEST,
   BASE_DIR,
+  PUBLIC_PATH
 } = constants;
 
 // page/**/*.pug -> dist/**/*.html
@@ -35,7 +36,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, DEST + BASE_DIR),
     filename: '[name]',
-    publicPath: BASE_DIR,
+    publicPath: PUBLIC_PATH,
   },
   module: {
     // 各ファイル形式ごとのビルド設定
