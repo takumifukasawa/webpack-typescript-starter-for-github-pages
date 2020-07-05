@@ -5,8 +5,9 @@
   "author": "takumifukasawa",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --inline --open --config webpack.dev.js"
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --inline --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
@@ -37,13 +38,5 @@
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2",
     "webpack-route-data-mapper": "^2.2.1"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ],
-    "plugins": [
-      "transform-runtime"
-    ]
   }
 }
